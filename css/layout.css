@@ -1,0 +1,14 @@
+.container {
+  width: 93.75%;
+  margin: 0 auto; }
+
+.container-fluid {
+  margin: 0 auto; }
+  @media all and (min-width: 320px) and (max-width: 496px) {
+    .container-fluid {
+      width: 93.75%; } }
+  @media all and (min-width: 497px) and (max-width: 768px) {
+    .container-fluid {
+      width: 100%; } }
+
+/*# sourceMappingURL=layout.css.map */

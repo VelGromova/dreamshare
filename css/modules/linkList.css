@@ -1,0 +1,18 @@
+.linkList h4 {
+  color: #444;
+  font-size: 14px;
+  margin: 12px 0 2px; }
+.linkList ul {
+  width: 200px;
+  margin: 0 auto 2px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+.linkList li a {
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 26px;
+  flex-shrink: 2;
+  color: #999; }
+
+/*# sourceMappingURL=linkList.css.map */

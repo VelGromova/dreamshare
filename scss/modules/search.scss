@@ -1,0 +1,19 @@
+.search {
+  width: 100%;
+  input[type=text] {
+    width: 95.75%;
+    padding: 15px 0 15px 11px;
+    font-size: 14px;
+    color: $grey9;
+    outline: none;
+    margin-top: 22px;
+  }
+  input[type=submit] {
+    margin: 10px auto 40px;
+    outline: none;
+    border: 0;
+    &:hover {
+      box-shadow: inset 2px 2px 2px $orange2;
+    }
+  }
+}

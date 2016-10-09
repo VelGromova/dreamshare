@@ -1,0 +1,25 @@
+@import '../variables';
+
+.linkList {
+  h4 {
+    color: $heading;
+    font-size: 14px;
+    margin: 12px 0 2px;
+  }
+  ul {
+    width: 200px;
+    margin: 0 auto 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  li {
+    a {
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 26px;
+      flex-shrink: 2;
+      color: $grey9;
+    }
+  }
+}

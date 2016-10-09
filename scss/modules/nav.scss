@@ -1,0 +1,27 @@
+%nav {
+  @media all and (min-width: 320px) and (max-width: 496px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    .userMenu {
+      padding-top: 29px;
+      padding-bottom: 97px;
+      a {
+        color: $white;
+        font-size: 14px;
+        margin-right: 20px;
+      }
+      span {
+        padding: 9px 18px;
+        border: 1px solid $white;
+        border-radius: 40px;
+      }
+    }
+    h4 {
+      color: $white;
+      text-transform: uppercase;
+      margin: 0 auto 26.5px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+linters:
+  PropertySortOrder:
+    enabled: false
+  EmptyLineBetweenBlocks:
+    enabled: false
+  SingleLinePerSelector:
+    enabled: false
+  SelectorFormat:
+    enabled: false
+  QualifyingElement:
+    enabled: false
