@@ -1,0 +1,29 @@
+.instruction {
+  &--steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &--step {
+      @extend %step;
+    }
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 496px) {
+  .instruction {
+    &--steps {
+      flex-flow: column nowrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media all and (min-width: 497px) and (max-width: 768px) {
+  .instruction {
+    &--steps {
+      &--step {
+        width: 30.73333%;
+      }
+    }
+  }
+}

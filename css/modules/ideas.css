@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 16 of scss/modules/ideas.scss
+        on line 11 of scss/modules/ideas.scss
 
-11:       object-position: top;
-12:     }
-13:     h3 {
-14:       width: 75%;
-15:       text-align: center;
-16:       color: $white;
-17:       line-height: 26px;
-18:       position: absolute;
-19:       left: 50%;
-20:       top: 50%;
-21:       transform: translate(-50%, -50%);
+6:     object-position: top;
+7:   }
+8:   h3 {
+9:     width: 75%;
+10:     text-align: center;
+11:     color: $white;
+12:     line-height: 26px;
+13:     position: absolute;
+14:     left: 50%;
+15:     top: 50%;
+16:     transform: translate(-50%, -50%);
 
 Backtrace:
-scss/modules/ideas.scss:16
+scss/modules/ideas.scss:11
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -30,20 +30,6 @@ scss/modules/ideas.scss:16
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:515:in `visit_media'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -92,4 +78,4 @@ scss/modules/ideas.scss:16
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 16 of scss/modules/ideas.scss\A \A 11:       object-position: top;\A 12:     }\A 13:     h3 {\A 14:       width: 75%;\A 15:       text-align: center;\A 16:       color: $white;\A 17:       line-height: 26px;\A 18:       position: absolute;\A 19:       left: 50%;\A 20:       top: 50%;\A 21:       transform: translate(-50%, -50%);"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 11 of scss/modules/ideas.scss\A \A 6:     object-position: top;\A 7:   }\A 8:   h3 {\A 9:     width: 75%;\A 10:     text-align: center;\A 11:     color: $white;\A 12:     line-height: 26px;\A 13:     position: absolute;\A 14:     left: 50%;\A 15:     top: 50%;\A 16:     transform: translate(-50%, -50%);"; }

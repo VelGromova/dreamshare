@@ -1,18 +1,24 @@
-.linkList h4 {
+.linkList h6 {
   color: #444;
   font-size: 14px;
-  margin: 12px 0 2px; }
+  margin-bottom: 11px; }
 .linkList ul {
-  width: 200px;
-  margin: 0 auto 2px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around; }
+  flex-flow: column nowrap; }
 .linkList li a {
   font-size: 14px;
   letter-spacing: 0;
   line-height: 26px;
   flex-shrink: 2;
   color: #999; }
+
+@media all and (min-width: 320px) and (max-width: 496px) {
+  .linkList h6 {
+    margin: 12px 0 2px; }
+  .linkList ul {
+    flex-flow: row wrap;
+    width: 200px;
+    margin: 0 auto 2px;
+    justify-content: space-around; } }
 
 /*# sourceMappingURL=linkList.css.map */

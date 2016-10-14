@@ -1,35 +1,27 @@
 /*
-Error: Undefined variable: "$grey9".
-        on line 6 of scss/modules/search.scss
+Error: Undefined variable: "$theme".
+        on line 5 of scss/section/footer.scss
 
-1: .search {
+1: .footer {
 2:   display: flex;
-3:   input[type=text] {
-4:     padding: 12px 0 12px 11px;
-5:     font-size: 14px;
-6:     color: $grey9;
-7:     outline: none;
-8:   }
-9:   input[type=submit] {
-10:     outline: none;
-11:     border: 0;
+3:   justify-content: space-around;
+4:   padding: 37px 0 20px;
+5:   border-top: 2px solid $theme;
+6:   h5 {
+7:     color: $theme;
+8:     text-transform: uppercase;
+9:   }
+10:   .producer {
 
 Backtrace:
-scss/modules/search.scss:6
+scss/section/footer.scss:5
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -78,4 +70,4 @@ scss/modules/search.scss:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grey9\".\A         on line 6 of scss/modules/search.scss\A \A 1: .search {\A 2:   display: flex;\A 3:   input[type=text] {\A 4:     padding: 12px 0 12px 11px;\A 5:     font-size: 14px;\A 6:     color: $grey9;\A 7:     outline: none;\A 8:   }\A 9:   input[type=submit] {\A 10:     outline: none;\A 11:     border: 0;"; }
+  content: "Error: Undefined variable: \"$theme\".\A         on line 5 of scss/section/footer.scss\A \A 1: .footer {\A 2:   display: flex;\A 3:   justify-content: space-around;\A 4:   padding: 37px 0 20px;\A 5:   border-top: 2px solid $theme;\A 6:   h5 {\A 7:     color: $theme;\A 8:     text-transform: uppercase;\A 9:   }\A 10:   .producer {"; }

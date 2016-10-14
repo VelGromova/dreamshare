@@ -1,21 +1,18 @@
 /*
-Error: Undefined variable: "$grey9".
-        on line 6 of scss/modules/search.scss
+Error: Undefined variable: "$evil-grey".
+        on line 3 of scss/section/createActivity.scss
 
-1: .search {
-2:   display: flex;
-3:   input[type=text] {
-4:     padding: 12px 0 12px 11px;
-5:     font-size: 14px;
-6:     color: $grey9;
-7:     outline: none;
-8:   }
-9:   input[type=submit] {
-10:     outline: none;
-11:     border: 0;
+1: .createActivity {
+2:   h5 {
+3:     color: $evil-grey;
+4:     letter-spacing: 0;
+5:     line-height: 14px;
+6:     text-align: center;
+7:   }
+8: }
 
 Backtrace:
-scss/modules/search.scss:6
+scss/section/createActivity.scss:3
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -78,4 +75,4 @@ scss/modules/search.scss:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grey9\".\A         on line 6 of scss/modules/search.scss\A \A 1: .search {\A 2:   display: flex;\A 3:   input[type=text] {\A 4:     padding: 12px 0 12px 11px;\A 5:     font-size: 14px;\A 6:     color: $grey9;\A 7:     outline: none;\A 8:   }\A 9:   input[type=submit] {\A 10:     outline: none;\A 11:     border: 0;"; }
+  content: "Error: Undefined variable: \"$evil-grey\".\A         on line 3 of scss/section/createActivity.scss\A \A 1: .createActivity {\A 2:   h5 {\A 3:     color: $evil-grey;\A 4:     letter-spacing: 0;\A 5:     line-height: 14px;\A 6:     text-align: center;\A 7:   }\A 8: }"; }

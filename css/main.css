@@ -6,8 +6,13 @@ h1, h2, h3, h4, h5, h6, p, a, li, ul, span, legend {
   padding: 0;
   font-family: sans-serif;
   font-weight: lighter;
-  text-decoration: none;
+  text-decoration: none; }
+
+li {
   list-style-type: none; }
+
+a {
+  text-decoration: none; }
 
 p {
   font-size: 14px; }
@@ -30,6 +35,9 @@ h5 {
 h6 {
   font-size: 14px; }
 
+@media all and (min-width: 497px) and (max-width: 768px) {
+  h1 {
+    font-size: 52px; } }
 .container {
   width: 93.75%;
   margin: 0 auto; }
@@ -44,6 +52,7 @@ h6 {
       width: 100%; } }
 
 .heading-closer, .heading-further {
+  width: 100%;
   color: #444;
   font-size: 22px;
   margin-top: 35px;
@@ -51,111 +60,131 @@ h6 {
   margin-left: auto;
   text-align: center; }
 
-.heading-closer {
-  margin-bottom: 15px; }
-
-.heading-further {
-  margin-bottom: 35px; }
+@media all and (min-width: 320px) and (max-width: 496px) {
+  .heading-closer {
+    margin-bottom: 15px; } }
+@media all and (min-width: 497px) and (max-width: 768px) {
+  .heading-closer {
+    margin-bottom: 35px;
+    margin-top: 95px; } }
 
 @media all and (min-width: 320px) and (max-width: 496px) {
-  .instruction--steps--step {
-    margin-top: 10px;
-    position: relative; }
-    .instruction--steps--step .overlay {
-      position: relative; }
-      .instruction--steps--step .overlay .gradient {
-        position: absolute;
-        z-index: 2;
-        background: linear-gradient(#ff4e50, #f9d423);
-        width: 100%;
-        height: 99%;
-        opacity: .06; }
+  .heading-further {
+    margin-bottom: 35px; } }
+@media all and (min-width: 497px) and (max-width: 768px) {
+  .heading-further {
+    margin-top: 95px;
+    margin-bottom: 35px; } }
+
+.instruction--steps--step {
+  position: relative; }
+  .instruction--steps--step .overlay .gradient {
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(#ff4e50, #f9d423);
+    height: 99%;
+    opacity: .06; }
+  .instruction--steps--step .overlay img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; }
+    @media all and (min-width: 320px) and (max-width: 496px) {
       .instruction--steps--step .overlay img {
         position: relative;
-        width: 100%; }
-    .instruction--steps--step .review {
-      position: absolute;
-      bottom: 22px;
-      left: 20px; }
-      .instruction--steps--step .review span {
-        color: #fff;
-        font-size: 10px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        padding: 4px 12px 4px 14px;
-        background-color: #ff4e50;
-        border-radius: 40px; }
-      .instruction--steps--step .review h2 {
-        color: #fff;
-        margin: 15px 0 12px; }
-      .instruction--steps--step .review p {
-        color: #e3e3e3;
-        width: 250px; } }
-
-@media all and (min-width: 320px) and (max-width: 496px) {
-  .slider--top {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    flex-wrap: wrap; }
-    .slider--top .userMenu {
-      padding-top: 29px;
-      padding-bottom: 97px; }
-      .slider--top .userMenu a {
-        color: #fff;
-        font-size: 14px;
-        margin-right: 20px; }
-      .slider--top .userMenu span {
-        padding: 9px 18px;
-        border: 1px solid #fff;
-        border-radius: 40px; }
-    .slider--top h4 {
-      color: #fff;
-      text-transform: uppercase;
-      margin: 0 auto 26.5px; } }
-
-@media all and (min-width: 320px) and (max-width: 496px) {
-  .hobby1, .hobby2, .hobby3, .hobby4 {
+        width: 100%;
+        height: 99%; } }
+  .instruction--steps--step .review {
+    width: 83%;
     position: absolute;
-    right: 58px;
-    top: 88px;
-    width: 16px;
-    height: 16px;
-    padding: 8px;
-    border-radius: 50%;
-    text-align: center; }
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 22px; }
+    .instruction--steps--step .review span {
+      color: #fff;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 4px 12px 4px 14px;
+      background-color: #ff4e50;
+      border-radius: 40px; }
+    .instruction--steps--step .review h2 {
+      color: #fff;
+      margin: 15px 0 12px; }
+    .instruction--steps--step .review p {
+      color: #e3e3e3; }
 
-  .hobby1 {
-    background-color: #ff4e50; }
+.slider--top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 46px 40px 0; }
+  .slider--top .userMenu {
+    padding-bottom: 97px; }
+    .slider--top .userMenu a {
+      color: #fff;
+      font-size: 14px;
+      margin-right: 20px; }
+    .slider--top .userMenu span {
+      padding: 9px 18px;
+      border: 1px solid #fff;
+      border-radius: 40px; }
+  .slider--top h4 {
+    color: #fff;
+    text-transform: uppercase; }
+  @media all and (min-width: 320px) and (max-width: 496px) {
+    .slider--top {
+      flex-direction: column-reverse;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0; }
+      .slider--top .userMenu {
+        padding-top: 29px; }
+      .slider--top h4 {
+        margin: 0 auto 26.5px; } }
 
-  .hobby2 {
-    background-color: #ffa710; }
+.hobby1, .hobby2, .hobby3, .hobby4 {
+  position: absolute;
+  right: 67px;
+  top: 88px;
+  width: 16px;
+  height: 16px;
+  padding: 8px;
+  border-radius: 50%;
+  text-align: center; }
 
-  .hobby3 {
-    background-color: #19d4ca; }
+.hobby1 {
+  background-color: #ff4e50; }
 
-  .hobby4 {
-    background-color: #667df3; } }
-@media all and (min-width: 320px) and (max-width: 496px) {
-  .partners--list--partner {
-    width: 236px;
-    margin: 16px auto 0;
-    text-align: center; }
-    .partners--list--partner .avatar {
-      position: relative; }
-    .partners--list--partner .name {
-      color: #444;
-      padding: 17px 0 13px; }
-    .partners--list--partner p {
-      color: #666;
-      letter-spacing: 0; } }
+.hobby2 {
+  background-color: #ffa710; }
+
+.hobby3 {
+  background-color: #19d4ca; }
+
+.hobby4 {
+  background-color: #667df3; }
+
+.partners--list--partner {
+  width: 256px;
+  text-align: center; }
+  @media all and (min-width: 320px) and (max-width: 496px) {
+    .partners--list--partner {
+      margin: 0 auto 35px; } }
+  .partners--list--partner .avatar {
+    position: relative; }
+  .partners--list--partner .name {
+    color: #444;
+    padding: 17px 0 13px; }
+  .partners--list--partner p {
+    color: #666;
+    letter-spacing: 0; }
 
 .btn-fullfill, .btn-bordered {
   display: block;
   width: 100%;
   text-align: center;
   border-radius: 40px;
-  margin: 0 auto;
   padding: 11px 0;
   color: #fff;
   font-size: 14px;
@@ -169,53 +198,87 @@ h6 {
   color: #ff4e50;
   border: 2px solid #ff4e50; }
 
+.btn-centered {
+  margin: 0 auto; }
+
+@media all and (min-width: 497px) and (max-width: 768px) {
+  .btn-fullfill {
+    width: 225px; }
+
+  .btn-bordered {
+    width: 180px; } }
+.holidays--idea {
+  position: relative; }
+  .holidays--idea img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top; }
+  .holidays--idea h3 {
+    width: 75%;
+    text-align: center;
+    color: #fff;
+    line-height: 26px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
 @media all and (min-width: 320px) and (max-width: 496px) {
   .holidays--idea {
     margin: 0 auto 10px;
-    position: relative;
     width: 100%; }
     .holidays--idea img {
       width: 100%;
       height: 120px;
-      max-height: 200px;
-      object-fit: cover;
-      object-position: top; }
+      max-height: 200px; } }
+@media all and (min-width: 497px) and (max-width: 768px) {
+  .holidays--idea {
+    margin: 0 auto 10px;
+    width: 30.73%; }
+    .holidays--idea img {
+      width: 100%;
+      height: 310px;
+      max-height: 400px; }
     .holidays--idea h3 {
-      width: 75%;
-      text-align: center;
-      color: #fff;
-      line-height: 26px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%); } }
-
+      width: 87.3%; } }
 .search {
-  width: 100%; }
+  display: flex; }
   .search input[type=text] {
-    width: 95.75%;
-    padding: 15px 0 15px 11px;
+    padding: 12px 0 12px 11px;
     font-size: 14px;
     color: #999;
-    outline: none;
-    margin-top: 22px; }
+    outline: none; }
   .search input[type=submit] {
-    margin: 10px auto 40px;
     outline: none;
     border: 0; }
     .search input[type=submit]:hover {
       box-shadow: inset 2px 2px 2px #ff773c; }
 
-.linkList h4 {
+@media all and (min-width: 320px) and (max-width: 496px) {
+  .search {
+    flex-flow: column wrap; }
+    .search input[type=text] {
+      width: 95.75%;
+      margin-top: 22px; }
+    .search input[type=submit] {
+      margin: 10px auto 40px; } }
+@media all and (min-width: 497px) and (max-width: 768px) {
+  .search {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+    .search input[type=text] {
+      width: 60%; }
+    .search input[type=submit] {
+      width: 35%; } }
+.linkList h6 {
   color: #444;
   font-size: 14px;
-  margin: 12px 0 2px; }
+  margin-bottom: 11px; }
 .linkList ul {
-  width: 200px;
-  margin: 0 auto 2px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around; }
+  flex-flow: column nowrap; }
 .linkList li a {
   font-size: 14px;
   letter-spacing: 0;
@@ -224,95 +287,113 @@ h6 {
   color: #999; }
 
 @media all and (min-width: 320px) and (max-width: 496px) {
-  .slider {
-    width: 100%;
-    height: 540px;
-    background: url("../images/slider-img.png") no-repeat center;
-    background-size: cover;
-    background-color: #000; }
-    .slider--description {
-      display: flex;
-      flex-flow: column wrap;
-      text-align: center; }
-      .slider--description h1 {
-        color: #fff;
-        text-transform: uppercase; }
-      .slider--description h5 {
-        color: #fff;
-        margin: 5.5px 0 15px; }
-
-  .instruction--steps {
-    display: flex;
-    flex-flow: column nowrap; }
-
-  .partners--list {
+  .linkList h6 {
+    margin: 12px 0 2px; }
+  .linkList ul {
+    flex-flow: row wrap;
+    width: 200px;
+    margin: 0 auto 2px;
+    justify-content: space-around; } }
+.slider {
+  width: 100%;
+  height: 700px;
+  background: url("../images/slider-img.png") no-repeat center;
+  background-size: cover;
+  background-color: #000; }
+  .slider--description {
     display: flex;
     flex-flow: column wrap;
-    margin-bottom: 23px; }
-
-  .holidays {
-    display: flex;
-    flex-flow: column wrap; }
-
-  .createActivity {
     text-align: center; }
-    .createActivity h5 {
-      color: #666;
-      letter-spacing: 0;
-      line-height: 14px; }
+    .slider--description h1 {
+      color: #fff;
+      text-transform: uppercase; }
+    .slider--description h5 {
+      color: #fff;
+      margin: 21.5px 0 37px; }
 
-  .footer {
-    text-align: center;
-    border-top: 2px solid #ff4e50; }
-    .footer h5 {
-      color: #ff4e50;
-      text-transform: uppercase;
-      text-align: center;
-      margin: 20px auto 7px; }
-    .footer a {
-      font-size: 14px;
-      color: #444;
-      text-align: center;
-      margin-top: 5px; }
-      .footer a img {
-        padding-bottom: 22px; }
-    .footer span {
+@media all and (min-width: 320px) and (max-width: 496px) {
+  .slider {
+    height: 540px; }
+    .slider--description h5 {
+      margin: 9.5px 0 15px; } }
+.instruction--steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+@media all and (min-width: 320px) and (max-width: 496px) {
+  .instruction--steps {
+    flex-flow: column nowrap;
+    justify-content: center; } }
+@media all and (min-width: 497px) and (max-width: 768px) {
+  .instruction--steps--step {
+    width: 30.73333%; } }
+.partners--list {
+  display: flex; }
+
+@media all and (min-width: 320px) and (max-width: 496px) {
+  .partners--list {
+    flex-flow: column wrap;
+    margin-bottom: 23px; } }
+@media all and (min-width: 497px) and (max-width: 768px) {
+  .partners--list {
+    flex-flow: row wrap;
+    justify-content: center; }
+    .partners--list--partner {
+      margin-bottom: 35px; } }
+.holidays {
+  display: flex;
+  flex-flow: row wrap; }
+
+@media all and (min-width: 320px) and (max-width: 496px) {
+  .holidays {
+    flex-flow: column wrap; } }
+@media all and (min-width: 497px) and (max-width: 768px) {
+  .holidays--idea {
+    width: 30.73%; }
+  .holidays .extended {
+    flex-basis: 64.0625%; } }
+.createActivity h5 {
+  color: #666;
+  letter-spacing: 0;
+  line-height: 14px;
+  text-align: center; }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 37px 0 20px;
+  border-top: 2px solid #ff4e50; }
+  .footer h5 {
+    color: #ff4e50;
+    text-transform: uppercase; }
+  .footer .producer {
+    width: 20%;
+    text-align: right; }
+    .footer .producer span {
       display: block;
       text-transform: uppercase;
       font-size: 10px;
       color: #ccc;
       letter-spacing: 1px;
-      margin: 13px auto 7px; } }
-@media all and (min-width: 497px) and (max-width: 768px) {
-  .slider {
-    width: 100%;
-    height: 540px;
-    background: url("../images/slider-img.png") no-repeat center;
-    background-size: cover;
-    background-color: #000; }
-    .slider .top {
-      display: flex;
-      justify-content: center;
-      padding-top: 29px; }
-      .slider .top a {
-        color: #fff;
-        font-size: 14px;
-        margin-right: 20px; }
-      .slider .top span {
-        padding: 9px 18px;
-        border: 1px solid #fff;
-        border-radius: 40px; }
-    .slider .headings {
-      display: flex;
-      flex-flow: column wrap;
+      margin-bottom: 7px; }
+    .footer .producer a {
+      font-size: 14px;
+      color: #444;
+      margin-top: 5px;
+      padding-bottom: 22px; }
+
+@media all and (min-width: 320px) and (max-width: 496px) {
+  .footer {
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #ff4e50; }
+    .footer .producer {
+      width: 100%;
       text-align: center; }
-      .slider .headings h1 {
-        color: #fff;
-        font-size: 30px;
-        text-transform: uppercase; }
-      .slider .headings h5 {
-        color: #fff;
-        font-size: 18px;
-        margin: 5.5px 0 15px; } }
+      .footer .producer span {
+        margin: 13px 0 7px; } }
 
 /*# sourceMappingURL=main.css.map */

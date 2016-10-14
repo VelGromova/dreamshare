@@ -1,17 +1,18 @@
 /*
 Error: Undefined variable: "$heading".
-        on line 2 of scss/modules/headings.scss
+        on line 3 of scss/modules/headings.scss
 
 1: %heading {
-2:   color: $heading;
-3:   font-size: 22px;
-4:   margin: {
-5:     top: 35px;
-6:     right: auto;
-7:     left: auto;
+2:   width: 100%;
+3:   color: $heading;
+4:   font-size: 22px;
+5:   margin: {
+6:     top: 35px;
+7:     right: auto;
+8:     left: auto;
 
 Backtrace:
-scss/modules/headings.scss:2
+scss/modules/headings.scss:3
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -63,4 +64,4 @@ scss/modules/headings.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$heading\".\A         on line 2 of scss/modules/headings.scss\A \A 1: %heading {\A 2:   color: $heading;\A 3:   font-size: 22px;\A 4:   margin: {\A 5:     top: 35px;\A 6:     right: auto;\A 7:     left: auto;"; }
+  content: "Error: Undefined variable: \"$heading\".\A         on line 3 of scss/modules/headings.scss\A \A 1: %heading {\A 2:   width: 100%;\A 3:   color: $heading;\A 4:   font-size: 22px;\A 5:   margin: {\A 6:     top: 35px;\A 7:     right: auto;\A 8:     left: auto;"; }

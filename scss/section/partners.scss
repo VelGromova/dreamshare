@@ -1,0 +1,29 @@
+.partners {
+  &--list {
+    display: flex;
+    &--partner {
+      @extend %partner;
+    }
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 496px) {
+  .partners {
+    &--list {
+      flex-flow: column wrap;
+      margin-bottom: 23px;
+    }
+  }
+}
+
+@media all and (min-width: 497px) and (max-width: 768px) {
+  .partners {
+    &--list {
+      flex-flow: row wrap;
+      justify-content: center;
+      &--partner {
+        margin-bottom: 35px;
+      }
+    }
+  }
+}

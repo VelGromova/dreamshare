@@ -1,7 +1,9 @@
+// general
 @import 'variables';
 @import 'base';
 @import 'layout';
 
+// modules
 @import 'modules/headings';
 @import 'modules/steps';
 @import 'modules/nav';
@@ -11,132 +13,10 @@
 @import 'modules/search';
 @import 'modules/linkList';
 
-@media all and (min-width: 320px) and (max-width: 496px) {
-  .slider {
-    width: 100%;
-    height: 540px;
-    background: url('../images/slider-img.png') no-repeat center;
-    background-size: cover;
-    background-color: $black;
-    &--top {
-      @extend %nav;
-    }
-    &--description {
-      display: flex;
-      flex-flow: column wrap;
-      text-align: center;
-      h1 {
-        color: $white;
-        text-transform: uppercase;
-      }
-      h5 {
-        color: $white;
-        margin: 5.5px 0 15px;
-      }
-    }
-  }
-
-  .instruction {
-    &--steps {
-      display: flex;
-      flex-flow: column nowrap;
-      &--step {
-        @extend %step;
-      }
-    }
-  }
-
-  .partners {
-    &--list {
-      display: flex;
-      flex-flow: column wrap;
-      margin-bottom: 23px;
-      &--partner {
-        @extend %partner;
-      }
-    }
-  }
-
-  .holidays {
-    display: flex;
-    flex-flow: column wrap;
-    &--idea {
-      @extend %idea;
-    }
-  }
-
-  .createActivity {
-    text-align: center;
-    h5 {
-      color: $evil-grey;
-      letter-spacing: 0;
-      line-height: 14px;
-    }
-  }
-
-  .footer {
-    text-align: center;
-    border-top: 2px solid $theme;
-    h5 {
-      color: $theme;
-      text-transform: uppercase;
-      text-align: center;
-      margin: 20px auto 7px;
-    }
-    a {
-      font-size: 14px;
-      color: $heading;
-      text-align: center;
-      margin-top: 5px;
-      img {
-        padding-bottom: 22px;
-      }
-    }
-    span {
-      display: block;
-      text-transform: uppercase;
-      font-size: 10px;
-      color: $grey-c;
-      letter-spacing: 1px;
-      margin: 13px auto 7px;
-    }
-  }
-}
-
-@media all and (min-width: 497px) and (max-width: 768px) {
-  .slider {
-    width: 100%;
-    height: 540px;
-    background: url('../images/slider-img.png') no-repeat center;
-    background-size: cover;
-    background-color: $black;
-    .top {
-      display: flex;
-      justify-content: center;
-      padding-top: 29px;
-      a {
-        color: $white;
-        font-size: 14px;
-        margin-right: 20px;
-      }
-      span {
-        padding: 9px 18px;
-        border: 1px solid $white;
-        border-radius: 40px;
-      }
-    }
-    .headings {
-      display: flex;
-      flex-flow: column wrap;
-      text-align: center;
-      h1 {
-        color: $white;
-        text-transform: uppercase;
-      }
-      h5 {
-        color: $white;
-        margin: 5.5px 0 15px;
-      }
-    }
-  }
-}
+// sections
+@import 'section/slider';
+@import 'section/instructions';
+@import 'section/partners';
+@import 'section/holidays';
+@import 'section/createActivity';
+@import 'section/footer';

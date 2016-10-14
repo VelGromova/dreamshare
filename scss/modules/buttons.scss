@@ -3,23 +3,33 @@
   width: 100%;
   text-align: center;
   border-radius: 40px;
-  margin: 0 auto;
   padding: 11px 0;
   color: $white;
   font-size: 14px;
   font-family: sans-serif;
 }
 
-
 .btn-fullfill {
   @extend %btn;
   background-color: $theme;
   color: $white;
-
 }
 
 .btn-bordered {
   @extend %btn;
   color: $theme;
   border: 2px solid $theme;
+}
+
+.btn-centered {
+  margin: 0 auto;
+}
+
+@media all and (min-width: 497px) and (max-width: 768px) {
+  .btn-fullfill {
+    width: 225px;
+  }
+  .btn-bordered {
+    width: 180px;
+  }
 }

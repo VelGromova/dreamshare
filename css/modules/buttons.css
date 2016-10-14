@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 8 of scss/modules/buttons.scss
+        on line 7 of scss/modules/buttons.scss
 
+2:   display: block;
 3:   width: 100%;
 4:   text-align: center;
 5:   border-radius: 40px;
-6:   margin: 0 auto;
-7:   padding: 11px 0;
-8:   color: $white;
-9:   font-size: 14px;
-10:   font-family: sans-serif;
-11: }
-12: 
-13: 
+6:   padding: 11px 0;
+7:   color: $white;
+8:   font-size: 14px;
+9:   font-family: sans-serif;
+10: }
+11: 
+12: .btn-fullfill {
 
 Backtrace:
-scss/modules/buttons.scss:8
+scss/modules/buttons.scss:7
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -67,4 +67,4 @@ scss/modules/buttons.scss:8
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 8 of scss/modules/buttons.scss\A \A 3:   width: 100%;\A 4:   text-align: center;\A 5:   border-radius: 40px;\A 6:   margin: 0 auto;\A 7:   padding: 11px 0;\A 8:   color: $white;\A 9:   font-size: 14px;\A 10:   font-family: sans-serif;\A 11: }\A 12: \A 13: "; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 7 of scss/modules/buttons.scss\A \A 2:   display: block;\A 3:   width: 100%;\A 4:   text-align: center;\A 5:   border-radius: 40px;\A 6:   padding: 11px 0;\A 7:   color: $white;\A 8:   font-size: 14px;\A 9:   font-family: sans-serif;\A 10: }\A 11: \A 12: .btn-fullfill {"; }

@@ -1,17 +1,14 @@
 @import '../variables';
 
 .linkList {
-  h4 {
+  h6 {
     color: $heading;
     font-size: 14px;
-    margin: 12px 0 2px;
+    margin-bottom: 11px;
   }
   ul {
-    width: 200px;
-    margin: 0 auto 2px;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: column nowrap;
   }
   li {
     a {
@@ -20,6 +17,20 @@
       line-height: 26px;
       flex-shrink: 2;
       color: $grey9;
+    }
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 496px) {
+  .linkList {
+    h6 {
+      margin: 12px 0 2px;
+    }
+    ul {
+      flex-flow: row wrap;
+      width: 200px;
+      margin: 0 auto 2px;
+      justify-content: space-around;
     }
   }
 }
