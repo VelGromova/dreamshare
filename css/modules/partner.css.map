@@ -3,5 +3,5 @@
 "mappings": "AAEA,kCAAO;EACL,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,GAAG,EAAE,IAAI;EACT,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,GAAG;EACZ,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,MAAM;;AAGpB,iCAAkC;EAChC,kCAAO;IACL,KAAK,EAAE,IAAI;AAGf,OAAQ;EAEN,gBAAgB,ECjBV,OAAO;;ADmBf,OAAQ;EAEN,gBAAgB,EClBT,OAAO;;ADoBhB,OAAQ;EAEN,gBAAgB,ECpBR,OAAO;;ADsBjB,OAAQ;EAEN,gBAAgB,ECvBT,OAAO",
 "sources": ["../../scss/modules/hobbies.scss","../../scss/variables.scss"],
 "names": [],
-"file": "hobbies.css"
+"file": "partner.css"
 }

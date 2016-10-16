@@ -1,6 +1,9 @@
 .container {
   width: 93.75%;
   margin: 0 auto;
+  @media all and (min-width: 769px) {
+    width: 70%;
+  }
 }
 
 .container-fluid {
@@ -10,5 +13,8 @@
   }
   @media all and (min-width: 497px) and (max-width: 768px) {
     width: 100%;
+  }
+  @media all and (min-width: 769px) {
+    width: 70%;
   }
 }

@@ -35,12 +35,15 @@ h5 {
 h6 {
   font-size: 14px; }
 
-@media all and (min-width: 497px) and (max-width: 768px) {
+@media all and (min-width: 497px) {
   h1 {
     font-size: 52px; } }
 .container {
   width: 93.75%;
   margin: 0 auto; }
+  @media all and (min-width: 769px) {
+    .container {
+      width: 70%; } }
 
 .container-fluid {
   margin: 0 auto; }
@@ -50,6 +53,9 @@ h6 {
   @media all and (min-width: 497px) and (max-width: 768px) {
     .container-fluid {
       width: 100%; } }
+  @media all and (min-width: 769px) {
+    .container-fluid {
+      width: 70%; } }
 
 .heading-closer, .heading-further {
   width: 100%;
@@ -60,22 +66,18 @@ h6 {
   margin-left: auto;
   text-align: center; }
 
-@media all and (min-width: 320px) and (max-width: 496px) {
-  .heading-closer {
-    margin-bottom: 15px; } }
-@media all and (min-width: 497px) and (max-width: 768px) {
-  .heading-closer {
-    margin-bottom: 35px;
-    margin-top: 95px; } }
+.heading-closer {
+  margin: 95px 0 35px; }
+
+.heading-further {
+  margin: 95px 0 35px; }
 
 @media all and (min-width: 320px) and (max-width: 496px) {
-  .heading-further {
-    margin-bottom: 35px; } }
-@media all and (min-width: 497px) and (max-width: 768px) {
-  .heading-further {
-    margin-top: 95px;
-    margin-bottom: 35px; } }
+  .heading-closer {
+    margin: 35px 0 15px; }
 
+  .heading-further {
+    margin: 35px 0; } }
 .instruction--steps--step {
   position: relative; }
   .instruction--steps--step .overlay .gradient {
@@ -153,6 +155,9 @@ h6 {
   border-radius: 50%;
   text-align: center; }
 
+@media all and (min-width: 993px) {
+  .hobby1, .hobby2, .hobby3, .hobby4 {
+    right: 25px; } }
 .hobby1 {
   background-color: #ff4e50; }
 
@@ -171,6 +176,10 @@ h6 {
   @media all and (min-width: 320px) and (max-width: 496px) {
     .partners--list--partner {
       margin: 0 auto 35px; } }
+  @media all and (min-width: 993px) {
+    .partners--list--partner {
+      width: 170px;
+      margin: 0 auto 35px; } }
   .partners--list--partner .avatar {
     position: relative; }
   .partners--list--partner .name {
@@ -182,7 +191,7 @@ h6 {
 
 .btn-fullfill, .btn-bordered {
   display: block;
-  width: 100%;
+  width: 225px;
   text-align: center;
   border-radius: 40px;
   padding: 11px 0;
@@ -196,21 +205,26 @@ h6 {
 
 .btn-bordered {
   color: #ff4e50;
+  width: 180px;
   border: 2px solid #ff4e50; }
 
 .btn-centered {
   margin: 0 auto; }
 
-@media all and (min-width: 497px) and (max-width: 768px) {
+@media all and (min-width: 320px) and (max-width: 496px) {
   .btn-fullfill {
-    width: 225px; }
+    width: 100%; }
 
   .btn-bordered {
-    width: 180px; } }
+    width: 100%; } }
 .holidays--idea {
-  position: relative; }
+  position: relative;
+  width: 30.73%;
+  margin: 0 auto 10px; }
   .holidays--idea img {
     width: 100%;
+    height: 310px;
+    max-height: 400px;
     object-fit: cover;
     object-position: top; }
   .holidays--idea h3 {
@@ -231,16 +245,6 @@ h6 {
       width: 100%;
       height: 120px;
       max-height: 200px; } }
-@media all and (min-width: 497px) and (max-width: 768px) {
-  .holidays--idea {
-    margin: 0 auto 10px;
-    width: 30.73%; }
-    .holidays--idea img {
-      width: 100%;
-      height: 310px;
-      max-height: 400px; }
-    .holidays--idea h3 {
-      width: 87.3%; } }
 .search {
   display: flex; }
   .search input[type=text] {
@@ -268,6 +272,16 @@ h6 {
     justify-content: space-between;
     margin-top: 25px;
     margin-bottom: 25px; }
+    .search input[type=text] {
+      width: 60%; }
+    .search input[type=submit] {
+      width: 35%; } }
+@media all and (min-width: 769px) {
+  .search {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 482px;
+    margin: 25px auto 100px; }
     .search input[type=text] {
       width: 60%; }
     .search input[type=submit] {
@@ -320,14 +334,15 @@ h6 {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
+  .instruction--steps--step {
+    width: 30.73333%; }
 
 @media all and (min-width: 320px) and (max-width: 496px) {
   .instruction--steps {
     flex-flow: column nowrap;
-    justify-content: center; } }
-@media all and (min-width: 497px) and (max-width: 768px) {
-  .instruction--steps--step {
-    width: 30.73333%; } }
+    justify-content: center; }
+    .instruction--steps--step {
+      width: 100%; } }
 .partners--list {
   display: flex; }
 
@@ -335,7 +350,7 @@ h6 {
   .partners--list {
     flex-flow: column wrap;
     margin-bottom: 23px; } }
-@media all and (min-width: 497px) and (max-width: 768px) {
+@media all and (min-width: 497px) and (max-width: 992px) {
   .partners--list {
     flex-flow: row wrap;
     justify-content: center; }
@@ -344,15 +359,16 @@ h6 {
 .holidays {
   display: flex;
   flex-flow: row wrap; }
-
-@media all and (min-width: 320px) and (max-width: 496px) {
-  .holidays {
-    flex-flow: column wrap; } }
-@media all and (min-width: 497px) and (max-width: 768px) {
   .holidays--idea {
     width: 30.73%; }
   .holidays .extended {
-    flex-basis: 64.0625%; } }
+    flex-basis: 64.0625%; }
+
+@media all and (min-width: 320px) and (max-width: 496px) {
+  .holidays {
+    flex-flow: column wrap; }
+    .holidays--idea {
+      width: 100%; } }
 .createActivity h5 {
   color: #666;
   letter-spacing: 0;

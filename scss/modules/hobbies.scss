@@ -10,6 +10,12 @@
   border-radius: 50%;
   text-align: center;
 }
+
+@media all and (min-width: 993px) {
+  %hobby {
+    right: 25px;
+  }
+}
 .hobby1 {
   @extend %hobby;
   background-color: $theme;

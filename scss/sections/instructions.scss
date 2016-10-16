@@ -5,6 +5,7 @@
     justify-content: space-around;
     &--step {
       @extend %step;
+      width: 30.73333%;
     }
   }
 }
@@ -14,15 +15,8 @@
     &--steps {
       flex-flow: column nowrap;
       justify-content: center;
-    }
-  }
-}
-
-@media all and (min-width: 497px) and (max-width: 768px) {
-  .instruction {
-    &--steps {
       &--step {
-        width: 30.73333%;
+        width: 100%;
       }
     }
   }

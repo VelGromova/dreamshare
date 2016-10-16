@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGE,kBAAG;EACD,KAAK,ECMG,IAAI;EDLZ,cAAc,EAAE,CAAC;EACjB,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,MAAM",
+"sources": ["../../scss/sections/createActivity.scss","../../scss/variables.scss"],
+"names": [],
+"file": "createActivity.css"
+}

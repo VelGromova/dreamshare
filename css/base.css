@@ -35,7 +35,7 @@ h5 {
 h6 {
   font-size: 14px; }
 
-@media all and (min-width: 497px) and (max-width: 768px) {
+@media all and (min-width: 497px) {
   h1 {
     font-size: 52px; } }
 

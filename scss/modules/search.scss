@@ -42,3 +42,18 @@
     }
   }
 }
+
+@media all and (min-width: 769px) {
+  .search {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 482px;
+    margin: 25px auto 100px;
+    input[type=text] {
+      width: 60%;
+    }
+    input[type=submit] {
+      width: 35%;
+    }
+  }
+}

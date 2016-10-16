@@ -3,6 +3,10 @@
   flex-flow: row wrap;
   &--idea {
     @extend %idea;
+    width: 30.73%;
+  }
+  .extended {
+    flex-basis: 64.0625%;
   }
 }
 
@@ -10,16 +14,8 @@
 @media all and (min-width: 320px) and (max-width: 496px) {
   .holidays {
     flex-flow: column wrap;
-  }
-}
-
-@media all and (min-width: 497px) and (max-width: 768px) {
-  .holidays {
     &--idea {
-      width: 30.73%;
-    }
-    .extended {
-      flex-basis: 64.0625%;
+      width: 100%;
     }
   }
 }

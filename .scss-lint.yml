@@ -9,3 +9,5 @@ linters:
     enabled: false
   QualifyingElement:
     enabled: false
+  StringQuotes:
+    enabled: false

@@ -8,6 +8,9 @@
   border-radius: 50%;
   text-align: center; }
 
+@media all and (min-width: 993px) {
+  .hobby1, .hobby2, .hobby3, .hobby4 {
+    right: 25px; } }
 .hobby1 {
   background-color: #ff4e50; }
 
