@@ -1,10 +1,24 @@
+@import '../variables';
+
 %idea {
   position: relative;
   width: 30.73%;
-  margin: 0 auto 10px;
+  margin: 0 auto 20px;
+  a {
+    &:after {
+      content: "";
+      position: absolute;
+      background: $black;
+      opacity: .15;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
   img {
     width: 100%;
-    height: 310px;
+    height: 100%;
     max-height: 400px;
     object-fit: cover;
     object-position: top;
@@ -18,6 +32,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
   }
 }
 
@@ -26,6 +41,11 @@
   %idea {
     margin: 0 auto 10px;
     width: 100%;
+    a {
+      &:after {
+        height: 120px;
+      }
+    }
     img {
       width: 100%;
       height: 120px;
@@ -33,18 +53,3 @@
     }
   }
 }
-
-// @media all and (min-width: 497px) and (max-width: 768px) {
-//   %idea {
-//     margin: 0 auto 10px;
-//     width: 30.73%;
-//     img {
-//       width: 100%;
-//       height: 310px;
-//       max-height: 400px;
-//     }
-//     h3 {
-//       width: 87.3%;
-//     }
-//   }
-// }

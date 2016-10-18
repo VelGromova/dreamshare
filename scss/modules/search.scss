@@ -1,3 +1,5 @@
+@import '../variables';
+
 .search {
   display: flex;
   input[type=text] {
@@ -9,6 +11,7 @@
   input[type=submit] {
     outline: none;
     border: 0;
+    cursor: pointer;
     &:hover {
       box-shadow: inset 2px 2px 2px $orange2;
     }

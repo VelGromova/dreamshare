@@ -2,12 +2,17 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li, ul, span, legend {
+h1, h2, h3, h4, h5, h6, a, li, ul {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: $sf-display;
   font-weight: lighter;
   text-decoration: none;
+}
+
+p, span {
+  font-family: sans-serif;
+  font-weight: lighter;
 }
 
 li { list-style-type: none; }

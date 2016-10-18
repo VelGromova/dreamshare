@@ -11,3 +11,5 @@ linters:
     enabled: false
   StringQuotes:
     enabled: false
+  PseudoElement:
+    enabled: false
